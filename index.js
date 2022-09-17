@@ -26,6 +26,7 @@ function start(){
     $timeheader.classList.remove("hide")
     $game.style.backgroundColor = "white"
     $start.classList.add("hide")
+    setupLocal()
     setTime()
     creatBox()
     timer()
@@ -108,7 +109,7 @@ function rating(){
         $apprating.insertAdjacentHTML("beforeend", `
         <div class=="user">
         ${elem.name}
-        ------
+        --
         ${elem.score}
         </div> 
  `) 
